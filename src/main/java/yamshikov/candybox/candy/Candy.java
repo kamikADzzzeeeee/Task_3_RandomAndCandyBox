@@ -47,11 +47,9 @@ public abstract class Candy {
 
     @Override
     public String toString() {
-        return "{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", price=" + price +
-                ", weight=" + weight +
-                '}';
+                ", weight=" + weight;
     }
 
 }

@@ -17,9 +17,9 @@ public class Start {
 
 
         //Задание на ООП
-        Chocolate chocolate1 = new Chocolate("Аленка", 70.50,90);
-        Chocolate chocolate2 = new Chocolate("АльпенГольд", 50.00,90);
-        Candy ice = new Ice("Башкирское мороженное", 50.99, 80);
+        Chocolate chocolate1 = new Chocolate("Аленка", 70.50,90, "Россия");
+        Chocolate chocolate2 = new Chocolate("АльпенГольд", 50.00,90, "Германия");
+        Candy ice = new Ice("Башкирское мороженное", 50.99, 80, "Шоколадное");
 
         CandyBox box = new CandyBox(chocolate1, ice);
         box.addCandyInBox(chocolate2);

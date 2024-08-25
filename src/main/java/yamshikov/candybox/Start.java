@@ -48,20 +48,20 @@ public class Start {
         int iMinPositive = 0;
 
         for (int i = 0; i < arraySize; i++){
-            if (array[i]<0){
+            if ((array[i]<0)&&(array[i]!=0)){
                 if (maxNegative<array[i]){
                     maxNegative = array[i];
                     iMaxNegative = i;
                 }
-            } else {
+            }
+            if ((array[i]>0)&&(array[i]!=0)) {
                 if (minPositive>array[i]){
                     minPositive = array[i];
                     iMinPositive = i;
                 }
             }
-
-
         }
+
         array[iMaxNegative] = minPositive;
         array[iMinPositive] = maxNegative;
         System.out.println("minPositive = " + minPositive);
